@@ -10,7 +10,7 @@ I am learning HTML, CSS, and JavaScript by building a one-page static website fo
 ## Project File Structure
 - Three separate files — HTML, CSS, and JS are **not** combined into one file
 - `index.html` — structure and content only, no `<style>` tags and no inline `<script>` tags
-- `style.css` — all CSS lives here, linked in the `<head>` with `<link rel="stylesheet" href="style.css">`
+- `style.css` — all CSS lives here, linked in the `<head>` with `<link rel="stylesheet" href="styles.css">`
 - `script.js` — all JavaScript lives here, linked just before `</body>` with `<script src="script.js"></script>`
 - No frameworks, no build tools, no external JS libraries
 
