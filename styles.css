@@ -31,6 +31,23 @@ h6 {
     font-family: 'Cormorant Garamond', Georgia, serif;
 }
 
+nav {
+    position: fixed; 
+    top: 0;
+    background-color: var(--cream);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 100;
+}
+
+ul{
+   max-height: 0;
+   overflow: hidden;
+}
 section { padding: 4rem 6vw; }
 @media (min-width: 768px)  { section { padding: 6rem 6vw; } }
 @media (min-width: 1024px) { section { padding: 7rem 6vw; } }
