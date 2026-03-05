@@ -84,10 +84,22 @@ section { padding: 4rem 6vw; }
         max-height: none;
         display: flex;
         flex-direction: row;
+    } 
+
+    #hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
-    
-    
+    #image-panel {
+        order: 2;
+        height: auto;
+    }
+
+    #text-panel {
+        order: 1;
+        height: auto;
+    }
 
 }
 @media (min-width: 1024px) { section { padding: 7rem 6vw; } }
