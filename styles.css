@@ -53,6 +53,10 @@ ul{
     border: none;
 }
 
+ul.open {
+    max-height: 300px;
+}
+
 section { padding: 4rem 6vw; }
 @media (min-width: 768px)  { 
     section { padding: 6rem 6vw; } 
