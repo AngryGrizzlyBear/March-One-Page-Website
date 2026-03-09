@@ -74,6 +74,22 @@ ul.open {
     order: 2;
 }
 
+#about {
+    background-color: var(--green-deep);
+    color: var(--cream);
+}
+
+.about-photo{
+    display: none;
+}
+
+.stat-num {
+    color: var(--gold);
+    font-size: 3rem;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+
 section { padding: 4rem 6vw; }
 @media (min-width: 768px)  { 
     section { padding: 6rem 6vw; } 
