@@ -19,7 +19,7 @@
 body {
     font-family: 'Jost', sans-serif;
     background-color: var(--cream);
-    color:var(--text-dark);
+    color: var(--text-dark);
 }
 
 h1,
@@ -32,7 +32,7 @@ h6 {
 }
 
 nav {
-    position: fixed; 
+    position: fixed;
     top: 0;
     background-color: var(--cream);
     backdrop-filter: blur(10px);
@@ -44,11 +44,12 @@ nav {
     z-index: 100;
 }
 
-ul{
-   max-height: 0;
-   overflow: hidden;
+ul {
+    max-height: 0;
+    overflow: hidden;
 }
-#hamburger{
+
+#hamburger {
     background: none;
     border: none;
 }
@@ -79,7 +80,7 @@ ul.open {
     color: var(--cream);
 }
 
-.about-photo{
+.about-photo {
     display: none;
 }
 
@@ -90,17 +91,24 @@ ul.open {
 }
 
 
-section { padding: 4rem 6vw; }
-@media (min-width: 768px)  { 
-    section { padding: 6rem 6vw; } 
-    #hamburger{
+section {
+    padding: 4rem 6vw;
+}
+
+@media (min-width: 768px) {
+    section {
+        padding: 6rem 6vw;
+    }
+
+    #hamburger {
         display: none;
     }
+
     ul {
         max-height: none;
         display: flex;
         flex-direction: row;
-    } 
+    }
 
     #hero {
         display: grid;
@@ -118,4 +126,20 @@ section { padding: 4rem 6vw; }
     }
 
 }
-@media (min-width: 1024px) { section { padding: 7rem 6vw; } }
+
+@media (min-width: 900px) {
+    #about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-photo {
+        display: block;
+    }
+}
+
+@media (min-width: 1024px) {
+    section {
+        padding: 7rem 6vw;
+    }
+}
