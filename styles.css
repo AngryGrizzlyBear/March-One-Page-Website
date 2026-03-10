@@ -80,6 +80,25 @@ ul.open {
     color: var(--cream);
 }
 
+.products-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.card {
+    background-color: var(--cream);
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+    box-shadow: 5px 10px var(--green-mid);
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 5px 10px var(--green-light);
+    transform: translateY(-6px);
+}
+
+
 .about-photo {
     display: none;
 }
@@ -89,6 +108,7 @@ ul.open {
     font-size: 3rem;
     font-family: 'Cormorant Garamond', Georgia, serif;
 }
+
 
 
 section {
