@@ -123,11 +123,12 @@ section {
 }
 
 #contact {
-display: grid;
-
+    display: grid;
 }
 
-input, textarea {
+
+input,
+textarea {
     font-size: 1rem;
     -webkit-appearance: none;
     border-radius: 0;
@@ -137,9 +138,27 @@ input[type="submit"] {
     width: 100%;
 }
 
+footer {
+    background-color: var(--text-dark);
+    color: var(--cream);
+    text-align: center;
+    padding: 10px;
+}
 
+@media (min-width:480px) {
+    input[type="submit"] {
+        width: auto;
+    }
+
+}
 
 @media (min-width: 768px) {
+
+
+    #contact {
+        grid-template-columns: 1fr 1fr;
+    }
+
     section {
         padding: 6rem 6vw;
     }
