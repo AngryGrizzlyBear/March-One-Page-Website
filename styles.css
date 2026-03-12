@@ -44,6 +44,10 @@ nav {
     z-index: 100;
 }
 
+nav a.active {
+    color: var(--gold);
+}
+
 ul {
     max-height: 0;
     overflow: hidden;
