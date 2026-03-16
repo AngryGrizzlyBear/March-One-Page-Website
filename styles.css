@@ -18,8 +18,10 @@
 
 body {
     font-family: 'Jost', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
     background-color: var(--cream);
-    color: var(--text-dark);
+    color: var(--text-dark); 
 }
 
 h1,
@@ -29,7 +31,21 @@ h4,
 h5,
 h6 {
     font-family: 'Cormorant Garamond', Georgia, serif;
+    letter-spacing: 0.05em;
 }
+
+h1{
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
 
 nav {
     position: fixed;
@@ -42,6 +58,7 @@ nav {
     align-items: center;
     width: 100%;
     z-index: 100;
+    font-size: 1rem;
 }
 
 nav a.active {
@@ -51,6 +68,10 @@ nav a.active {
 ul {
     max-height: 0;
     overflow: hidden;
+}
+
+p {
+    max-width: 65ch;
 }
 
 #hamburger {
@@ -171,7 +192,6 @@ footer {
 
 }
 
-;
 
 @media (min-width:480px) {
     input[type="submit"] {
