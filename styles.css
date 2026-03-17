@@ -81,6 +81,7 @@ p {
     border: none;
     padding: 20px;
     cursor: pointer;
+    z-index: 300;
 }
 
 #hamburger span {
