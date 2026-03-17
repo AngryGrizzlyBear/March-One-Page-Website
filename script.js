@@ -2,6 +2,7 @@ const hamburger = document.querySelector('#hamburger')
 const navList = document.querySelector('ul')
 const hamburgerItems = document.querySelectorAll('nav a')
 const target = document.querySelectorAll('.fade-up')
+const nav = document.querySelector('nav');
 const options = {
     root: null,
     rootMargin: '0px',
@@ -13,6 +14,8 @@ window.addEventListener('scroll', onScroll)
 
 hamburger.addEventListener("click", () => {
     navList.classList.toggle('open')
+    hamburger.classList.toggle('is-open')
+    nav.classList.toggle('menu-open')
     const isExpanded = hamburger.getAttribute('aria-expanded')
     hamburger.setAttribute('aria-expanded', isExpanded === 'true' ? 'false' : 'true');
 
@@ -21,6 +24,8 @@ hamburger.addEventListener("click", () => {
 hamburgerItems.forEach((item) => {
     item.addEventListener('click', () => {
         navList.classList.remove('open');
+        hamburger.classList.remove('is-open')
+        nav.classList.remove('menu-open')
         hamburger.setAttribute('aria-expanded', 'false');
     })
 })

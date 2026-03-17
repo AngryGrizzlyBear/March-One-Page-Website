@@ -21,7 +21,7 @@ body {
     font-size: 1rem;
     line-height: 1.6;
     background-color: var(--cream);
-    color: var(--text-dark); 
+    color: var(--text-dark);
 }
 
 h1,
@@ -34,7 +34,7 @@ h6 {
     letter-spacing: 0.05em;
 }
 
-h1{
+h1 {
     font-size: 3rem;
 }
 
@@ -66,8 +66,10 @@ nav a.active {
 }
 
 ul {
-    max-height: 0;
-    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+
 }
 
 p {
@@ -77,10 +79,55 @@ p {
 #hamburger {
     background: none;
     border: none;
+    padding: 20px;
+    cursor: pointer;
 }
 
+#hamburger span {
+    width: 20px;
+    height: 2px;
+    background-color: var(--green-deep);
+    display: block;
+    margin: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#hamburger.is-open span:nth-child(1) {
+    transform: translateY(4px) rotate(45deg);
+}
+
+#hamburger.is-open span:nth-child(2) {
+    opacity: 0;
+}
+
+#hamburger.is-open span:nth-child(3) {
+    transform: translateY(-4px) rotate(-45deg);
+}
+
+nav.menu-open #logo {
+    display: none;
+}
+
+
 ul.open {
-    max-height: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--cream);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+    font-size: 3rem;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+ul.open a {
+    color: var(--green-light);
 }
 
 
@@ -216,7 +263,8 @@ footer {
     }
 
     ul {
-        max-height: none;
+        opacity: 1;
+        pointer-events: auto;
         display: flex;
         flex-direction: row;
     }
