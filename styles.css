@@ -277,6 +277,20 @@ footer {
         pointer-events: auto;
         display: flex;
         flex-direction: row;
+        gap: 2rem;
+    }
+
+    nav {
+        padding: 0 2rem;
+    }
+
+    nav a {
+        color: var(--text-mid);
+        text-decoration: none;
+    }
+
+    nav a:hover {
+        color: var(--green-mid);
     }
 
     #hero {
@@ -293,6 +307,9 @@ footer {
         order: 1;
         height: auto;
     }
+
+
+
 
 }
 
