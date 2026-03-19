@@ -152,13 +152,14 @@ ul.open a {
 }
 
 #about {
-    background-color: var(--green-deep);
+    background-color: var(--green-mid);
     color: var(--cream);
 }
 
 .products-grid {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 3rem;
 }
 
 
@@ -230,6 +231,8 @@ section {
 
 #contact {
     display: grid;
+    background-color: var(--green-deep);
+    color: var(--cream);
 }
 
 
@@ -238,6 +241,13 @@ textarea {
     font-size: 1rem;
     -webkit-appearance: none;
     border-radius: 0;
+    border: 1px solid var(--green-light);
+    padding: 0.5rem;
+    width: 100%;
+}
+
+textarea {
+    min-height: 120px;
 }
 
 input[type="submit"] {
@@ -245,7 +255,7 @@ input[type="submit"] {
 }
 
 footer {
-    background-color: var(--text-dark);
+    background-color: var(--gold);
     color: var(--cream);
     text-align: center;
     padding: 10px;
