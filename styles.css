@@ -183,6 +183,10 @@ ul.open a {
 
 }
 
+.container {
+    padding: 2rem;
+}
+
 
 .about-photo {
     display: none;
