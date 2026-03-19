@@ -161,6 +161,7 @@ ul.open a {
     grid-template-columns: 1fr;
 }
 
+
 .card {
     background-color: var(--cream);
     border: 1px solid var(--green-light);
@@ -172,6 +173,14 @@ ul.open a {
 .card:hover {
     box-shadow: 5px 10px var(--green-light);
     transform: translateY(-6px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+
 }
 
 
