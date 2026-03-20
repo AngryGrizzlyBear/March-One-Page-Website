@@ -207,9 +207,12 @@ ul.open a {
 
 .about-stats {
     display: flex;
+    align-items: flex-start;
     justify-content: space-around;
     margin-top: 2rem;
+    text-align: center;
 }
+
 
 .stat-num {
     color: var(--gold);
