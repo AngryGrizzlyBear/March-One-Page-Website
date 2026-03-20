@@ -42,6 +42,11 @@ function onScroll() {
             }
         }
     })
+         if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+            hamburgerItems.forEach((link) => link.classList.remove('active'))
+            const contactLink = document.querySelector('nav a[href="#contact"]')
+            if (contactLink) contactLink.classList.add('active')
+        }
 }
 
 

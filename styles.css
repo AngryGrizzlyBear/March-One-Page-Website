@@ -148,7 +148,7 @@ ul.open a {
 
 #text-panel {
     order: 2;
-    padding: 2rem;
+    padding: 1rem 0;
 }
 
 #about {
@@ -326,6 +326,10 @@ footer {
     nav a {
         color: var(--text-mid);
         text-decoration: none;
+    }
+
+    nav a.active {
+        color: var(--gold);
     }
 
     nav a:hover {
