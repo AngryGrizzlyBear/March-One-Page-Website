@@ -273,7 +273,11 @@ footer {
     background-color: var(--gold);
     color: var(--cream);
     text-align: center;
-    padding: 10px;
+    padding: 10px 6vh;
+}
+
+footer p {
+    max-width: none;
 }
 
 
@@ -354,10 +358,6 @@ footer {
         order: 1;
         height: auto;
     }
-
-
-
-
 }
 
 @media (min-width: 900px) {
